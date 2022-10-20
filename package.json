@@ -1,0 +1,13 @@
+{
+  "name": "ping_a_Google",
+  "version": "1.0.0",
+  "description": "hace un ping a un servidor de Google",
+  "author": "Araceli",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
