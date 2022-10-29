@@ -1,8 +1,14 @@
-FROM node:10.16.0-alpine
-WORKDIR /app
-COPY package.json /app
-COPY servidor.js /app
-RUN npm install
+FROM node:argon
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY package.json /usr/src/app
+COPY servidor.js /usr/src/app
+
+RUN npm install 
+
 EXPOSE 8080
-ENTRYPOINT ["node","servidor"]
+CMD ["npm","start"]
+
 
