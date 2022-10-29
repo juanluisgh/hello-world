@@ -4,3 +4,4 @@ COPY package.json /app
 COPY servidor.js /app
 RUN npm install
 ENTRYPOINT ["node","servidor"]
+
